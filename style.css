@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body{
+    font-size: larger;
+    font-family: "Montserrat", serif;
+    margin: 5em;
+    background-size: cover;
+    background-position: static;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+    background-image: url(../images/modern_background.jpg), url(../images/retro_background.jpg);
+}
+
+body h1{
+    margin: 2em 0;
+    font-weight: 500;
+}
+
+.carImage{
+    display: none;
+    width: 100%;
+}
+
+button{
+    background-color: #000;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    border: solid 1px black;
+    border-radius: 2px;
+    border-radius: 15px;
+    padding: 7px 15px;
+    
+}
+
+button:hover, button.active:hover{
+    cursor: pointer;
+    border: solid 1px #fff;
+}
+
+
+button.active{
+    background-color: rgb(255, 0, 0);
+    font-family: "Montserrat", serif;
+    color: rgb(0, 0, 0);
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 7px 15px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 3em;
+}
+
+.column2{
+    padding-top: 5em;
+    position: static;
+}

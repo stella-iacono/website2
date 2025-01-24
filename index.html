@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form id="nameForm">
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" name="nameInput" required>
+        <input type="button" value="Submit" onclick="displayUserName()">
+    </form>
+    <h1 id="displayName">Custom Toyota</h1>
+    <div class="container">
+        <div class="column1">
+            <div>
+                <p>Color</p>
+                <button onclick="setColor('red', this)">Red</button>
+                <button onclick="setColor('black', this)">Black</button>
+                <button onclick="setColor('white', this)">White</button>
+            </div>
+
+            <div>
+                <p>Type</p>
+                <button onclick="setType('sport', this)">Sport</button>
+                <button onclick="setType('luxury', this)">Luxury</button>
+            </div>
+
+            <div>
+                <p>Style</p>
+                <button onclick="setStyle('modern', this)">Modern</button>
+                <button onclick="setStyle('retro', this)">Retro</button>
+            </div>
+        </div>
+        <div class="column2">
+            <img id="carImage" class="carImage" src="" alt="Epic Toyota">
+        </div>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>
